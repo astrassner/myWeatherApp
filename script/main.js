@@ -23,7 +23,7 @@ var app = new Vue({
                 if (e.which == 13) {
                     var city = $(".search").val();
                     if (city != "") {
-                        var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&lang=en&appid=a3364b5758c047f38dff27c3de55f5ff";
+                        var url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&lang=en&appid=a3364b5758c047f38dff27c3de55f5ff";
                     } else {
                         location.reload();
                     }
