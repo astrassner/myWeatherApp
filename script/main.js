@@ -1,9 +1,9 @@
-function shuffleImg() {
+/*function shuffleImg() {
     var images = ["kitten_clear.jpg", "kitten_cold.jpg", "kitten_rain.jpg", "kitten_snow.jpg", "kitten_thunder.jpeg", "kitten_warm_swim.jpg", "kitten_clear2.jpg", "kitten_rain2.jpg"];
 
     $('<img class="fade-in" src="style/kitten/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.shuffle');
 
-}
+}*/
 
 /*shuffleImg()*/
 
