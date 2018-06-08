@@ -23,10 +23,12 @@ var app = new Vue({
         getData: function () {
                 
                     var city = $(".search").val();
-                    if (city != "") {
+                    if (city != "" && isNaN(city)) {
                         var url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&lang=en&appid=a3364b5758c047f38dff27c3de55f5ff";
-                    } else {
+                    } else if (city == "") {
                         location.reload();
+                    } else {
+                        alert("Please search by City name")
                     }
                     $.getJSON(url, function (data) {
                         console.log(data);
