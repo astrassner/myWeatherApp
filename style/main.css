@@ -1,0 +1,89 @@
+.additionalInfo img{
+    height: 100px; 
+}
+
+.weatherLogo img{
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.weather{
+    margin: 20px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+}
+
+.weather p{
+    font-size: 30px;
+}
+
+.input p{
+    font-size: 30px;
+}
+
+h1{
+    font-size: 60px;
+    color: black;
+}
+
+p{
+    color: black;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    /*background: linear-gradient(rgba(211,211,211,0), rgba(192,192,192,1));*/  
+}
+
+#cuteKitten{
+    height: 400px;
+}
+
+.container{
+    display: flex;
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.flex1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.flex2{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+
+.flex3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.shuffle img{
+    height: 500px;
+    width: 450px;
+}

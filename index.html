@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Weathernator</title>
+</head>
+
+<body>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="style/gifs/Heaven.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <header>
+        <div class="container">
+            <div class="flex">
+                <div class="header">
+                    <h1>Fancy Weather</h1>
+                </div>
+                <div class="input">
+                    <p>City:
+                        <input type="text" class="search" placeholder="search">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="weather">
+
+        <div class="container">
+
+            <div class="flex1">
+
+                <div class="searchedCity">
+                    <p>What is the Weather like?</p>
+                </div>
+
+                <div class="weatherLogo">
+
+                    <div class="flex1">
+
+                        <!--<div class="shuffle"></div>-->
+                            <div class="happyVid">
+                                <video id="cuteKitten" onclick="this.paused ? this.play() : this.pause();">
+                                  <source src="style/gifs/kitten/Pesach.mp4" type="video/mp4">
+                                  Your browser does not support HTML5 video.
+                                </video>
+                            </div>
+                        <p id="">Maybe this will brightened your day!</p>
+
+                    </div>
+
+                </div>
+
+                <div class="temp">
+
+                    <p id="temperature"></p>
+
+                </div>
+
+                <div class="additionalInfo flex2">
+
+                    <div class="maxTemp">
+                        <div class="flex1">
+                            <div class="maxTempImage"></div>
+                            <div class="maxTemperature">
+                                <p id="numberTemp"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cloudy">
+                        <div class="flex1">
+                            <div class="cloudyImage"></div>
+                            <div class="cloudyness">
+                                <p id="numberCloudy"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="humidity">
+                        <div class="flex1">
+                            <div class="humidityImage"></div>
+                            <div class="humidityVal">
+                                <p id="numberHumidity"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="container">
+
+            <div class="flex3">
+
+                <p>&copy; FancyKittenCompany</p>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- vue -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <!-- main -->
+    <script src="script/main.js"></script>
+</body>
+
+</html>
