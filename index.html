@@ -16,111 +16,112 @@
       Your browser does not support HTML5 video.
     </video>
 
-    <header>
-        <div class="container">
-            <div class="flex">
-                <div class="header">
-                    <h1>Fancy Weather</h1>
-                </div>
-                <div class="input">
-                    <p>City:
-                        <input type="text" class="search" placeholder="search">
-                    </p>
+        <header>
+            <div class="container">
+                <div class="flex">
+                    <div class="header">
+                        <h1>Fancy Weather</h1>
+                    </div>
+                    <div class="input">
+                        <p>City:
+                            <input type="text" class="search" placeholder="search">
+                            <button id="searchButton">Go!</button>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </header>
+        </header>
 
-    <section class="weather">
+        <section class="weather">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="flex1">
+                <div class="flex1">
 
-                <div class="searchedCity">
-                    <p>What is the Weather like?</p>
-                </div>
+                    <div class="searchedCity">
+                        <p>What is the Weather like?</p>
+                    </div>
 
-                <div class="weatherLogo">
+                    <div class="weatherLogo">
 
-                    <div class="flex1">
+                        <div class="flex1">
 
-                        <!--<div class="shuffle"></div>-->
+                            <!--<div class="shuffle"></div>-->
                             <div class="happyVid">
-                               
-                               <div class="flex1">
-                               
+
+                                <div class="flex1">
+
                                     <video id="cuteKitten" onclick="this.paused ? this.play() : this.pause();">
                                       <source src="style/gifs/kitten/Pesach.mp4" type="video/mp4">
                                       Your browser does not support HTML5 video.
                                     </video>
-                                
+
                                 </div>
                             </div>
-                        <p id="">Maybe this will brightened your day!</p>
+                            <p id="">Maybe this will brightened your day!</p>
+
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="temp">
 
-                <div class="temp">
+                        <p id="temperature"></p>
 
-                    <p id="temperature"></p>
+                    </div>
 
-                </div>
+                    <div class="additionalInfo flex2">
 
-                <div class="additionalInfo flex2">
-
-                    <div class="maxTemp">
-                        <div class="flex1">
-                            <div class="maxTempImage"></div>
-                            <div class="maxTemperature">
-                                <p id="numberTemp"></p>
+                        <div class="maxTemp">
+                            <div class="flex1">
+                                <div class="maxTempImage"></div>
+                                <div class="maxTemperature">
+                                    <p id="numberTemp"></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="cloudy">
-                        <div class="flex1">
-                            <div class="cloudyImage"></div>
-                            <div class="cloudyness">
-                                <p id="numberCloudy"></p>
+                        <div class="cloudy">
+                            <div class="flex1">
+                                <div class="cloudyImage"></div>
+                                <div class="cloudyness">
+                                    <p id="numberCloudy"></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="humidity">
-                        <div class="flex1">
-                            <div class="humidityImage"></div>
-                            <div class="humidityVal">
-                                <p id="numberHumidity"></p>
+                        <div class="humidity">
+                            <div class="flex1">
+                                <div class="humidityImage"></div>
+                                <div class="humidityVal">
+                                    <p id="numberHumidity"></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <footer>
-
-        <div class="container">
-
-            <div class="flex3">
-
-                <p>&copy; FancyKittenCompany</p>
 
             </div>
 
-        </div>
+        </section>
+
+        <footer>
+
+            <div class="container">
+
+                <div class="flex3">
+
+                    <p>&copy; FancyKittenCompany</p>
+
+                </div>
+
+            </div>
 
 
 
-    </footer>
+        </footer>
 
 
     <!-- jQuery library -->

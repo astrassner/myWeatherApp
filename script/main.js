@@ -15,12 +15,13 @@ var app = new Vue({
 
     },
     created: function () {
-        this.getData();
+        /*this.getData();*/
+        this.keyPress();
+        this.onClick();
     },
     methods: {
         getData: function () {
-            $(".search").keypress(function (e) {
-                if (e.which == 13) {
+                
                     var city = $(".search").val();
                     if (city != "") {
                         var url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&lang=en&appid=a3364b5758c047f38dff27c3de55f5ff";
@@ -32,11 +33,23 @@ var app = new Vue({
                         app.weatherData(data);
                         app.additionalData(data);
                     })
-                }
-
-            })
-
+                
         },
+        
+        keyPress: function(){
+            $(".search").keypress(function (e) {
+                if (e.which == 13) {
+                    app.getData();
+                }
+            })
+        },
+        
+        onClick: function(){
+            $("#searchButton").on("click", function(){
+                app.getData();
+            })    
+        },
+        
         weatherData: function (data) {
 
             var weatherDiv = $(".searchedCity");
